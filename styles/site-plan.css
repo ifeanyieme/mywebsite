@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Rock+Salt&family=Rosarivo&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -88,16 +88,16 @@ p {
 }
 
 .primary {
-  background-color: goldenrod;
+  background-color: #daa520;
 }
 .secondary {
-  background-color: burlywood;
+  background-color: #deb887;
 }
 .accent1 {
-  background-color: blueviolet;
+  background-color: #8a2be2;
 }
 .accent2{
-  background-color: blue;
+  background-color: #0000ff;
 }
 
 p.colored {
