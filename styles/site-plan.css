@@ -41,7 +41,7 @@ img {
   margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+  font-family: 'merriweather';
   color: rgba(8, 81, 150, 0.63);
   
 }
@@ -54,7 +54,7 @@ hr {
   background: grey;
 }
 h3 {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Rocksalt';
   font-size:25px ;
 }
 header {
@@ -68,7 +68,7 @@ header > h1, header > h2 {
 }
 
 p {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-family:'Rosarivo' ;
   color: black;
   padding: 1em;
   font-size: 23px;
