@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/khiddle tech.png" alt="Logo image" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="site-plan.html">Site Plan</a></li>
+                <li><a href="expert_insight.html">Insight</a></li>
+                <li><a href="learning.html">Learnings</a></li>
+                <li><a href="contact-form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+/- ---------------About-------------------- -/>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pross.jpeg">   
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Greetings! I'm Eme Ifeanyi Prosper,am a student of BYU Idaho,a passionate and versatile professional with a love for crafting engaging digital experiences. As both a web designer and computer programmer, I thrive at the intersection of creativity and technology. Being able to design things has been my lifelong dream, web design is a dream come through for me to actualize my dream.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>UI/UX</span><br>Web App Development</li>
+                        <li><span>UI/UX</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>UI/UX Design Training at BYU Idaho</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI//UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                        <li><span>2014</span><br>BBA from ISM Bangalore. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</- -------------------- Testimonial --------------- -/>
+<div>
+    <h1>CERTIFIED TESTIMONIAL</h1>
+</div>
+<div class="testimonial-container">
+    <div class="testimonial">
+        <a href="index.html"><img src="images/khiddle tech.png" alt="Logo image" class="logo"></a>
+        <p>
+            I approached the web designing team with a vision for my small business website, and they exceeded my expectations! Their attention to detail and creative approach turned my ideas into a visually stunning and user-friendly site. The team was responsive to my feedback and delivered a website that perfectly represents my brand. I highly recommend their services to anyone seeking a professional and reliable web design partner.
+            <h3>Christian Uche</h3>
+        </p>
+    </div>
+
+    <div class="testimonial">
+        <a href="#"><img src="images/khiddle tech.png" alt="Logo image" class="logo">
+        <p>
+            Working with the web design experts was a game-changer for my e-commerce venture. They not only crafted a modern and visually appealing online store but also optimized it for a seamless shopping experience. The team's technical expertise and commitment to deadlines were impressive. Thanks to their efforts, my business now has a robust online presence that sets it apart from the competition. I'm grateful for their dedication and would gladly collaborate with them again.
+            <h3>Obinna Ogbuagu</h3>
+        </p>
+    </div>
+
+    <div class="testimonial">
+        <img src="images/khiddle tech.png" alt="Logo image" class="logo">
+        <p>
+            Our nonprofit organization needed a website that effectively communicated our mission and engaged our supporters. The web design team not only captured the essence of our cause but also ensured the site was user-friendly and accessible. Their commitment to social impact was evident throughout the process. The result? A beautifully designed website that has significantly increased our online reach and support. I can't thank them enough for their creativity and professionalism.
+            <h3>Amanda Rodriguez</h3>
+        </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</body>
+<footer>
+    <div class="contact-container">
+        <div id="contact-form" class="contact-section">
+          <h3>Contact Us</h3>
+          <!-- Add your contact form HTML code here -->
+          <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+    </div>
+    <div>
+        <div class="map-section contact-section">
+          <!-- Add your map HTML code here -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.9226326428873!2d-0.1282091842970842!3d51.50778737963692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604e4f377db4f%3A0x7c16d41ec859e9c4!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1577363866977!5m2!1sen!2suk" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      
+        <div class="contact-info contact-section">
+          <div class="logo-and-phone">
+            <img src="images/khiddle tech.png" alt="Logo image" class="logo" width="100">
+            <div class="phone-number">
+              <h3>Contact Information</h3>
+              <p>Phone: +234 906-573-5502</p>
+              <p>Email: emeprosper4@gmail.com</p>
+              <p>&copy; Eme Ifeanyi</p>
+            </div>
+          </div>
+        </div>
+    </div>      
+  </footer>
+</html>
