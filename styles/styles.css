@@ -159,6 +159,7 @@ nav ul li a:hover::after {
 }
   
 .testimonial {
+    text-decoration: none;
     border: 5px solid #aea00e;
     margin: 10px;
     padding: 20px;
