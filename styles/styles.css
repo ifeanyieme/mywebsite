@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Rock+Salt&family=Rosarivo&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,51 +12,53 @@ html {
 }
    
 body {
-    background: #080808;
+    background: #070707;
     color: #fff;
+    
+    
+    
 }
 #header {
     width: 100%;
     height: 100vh;
     background-image: url("networks2.jpg");
     background-size: cover;
-    background-position: centers;
+    background-position:centers;
 }
   
 .container {
     padding: 10px 10%;
+    
 }
-  
-nav {
-    display: flex;
+nav{
+    display:flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-size: 18px;
-    font-family: Arial;
-}
-  
-.logo {
-    width: 100px;
 }
   
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+  display: inline;
+  list-style: none;
+  margin: 10px 20px;
   
 }
   
 nav ul li a {
-    color: #e2e2e2;
-    text-decoration: none;
-    font-size: 20px;
-    position: relative;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fffdfd;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  padding: 15px;
+  text-align:right;
+  font-family: Merriweather;
+  
+
 }
   
 nav ul li a::after {
-    content: '';
+  content: '';
     width: 0;
     height: 3px;
     background: #ffea01;
@@ -67,7 +71,6 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
   }
-  
 ------------About-----------------/
 #about {
     padding: 80px 0;
@@ -112,7 +115,7 @@ nav ul li a:hover::after {
     position: relative;
 }
   
-  .tab-links::after {
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -164,6 +167,7 @@ nav ul li a:hover::after {
     justify-content: center;
     text-justify: auto;
     background: #120f0f;
+    font-family: Libre Baskerville;
 }
   
 .testimonial img {
@@ -225,6 +229,7 @@ footer {
 .contact-info {
     flex-basis: 300px;
     max-width: 100%;
+    
 }
   
 .logo-and-phone {
